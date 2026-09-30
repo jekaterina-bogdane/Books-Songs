@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (Mac/Linux)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/books-songs-server",
+      "args": [
+        "--port", "8080",
+        "--data",     "${workspaceFolder}/data",
+        "--frontend", "${workspaceFolder}/build/frontend"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/build",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "CMake: Build"
+    },
+    {
+      "name": "Debug (Windows)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Debug/books-songs-server.exe",
+      "args": [
+        "--port", "8080",
+        "--data",     "${workspaceFolder}/data",
+        "--frontend", "${workspaceFolder}/build/Debug/frontend"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/build/Debug",
+      "environment": [],
+      "externalConsole": true,
+      "preLaunchTask": "CMake: Build"
+    }
+  ]
+}

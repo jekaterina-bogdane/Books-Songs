@@ -1,0 +1,14 @@
+# Build output (recreated by CMake)
+build/
+
+# Runtime data created by the server — personal, not for GitHub
+data/users.dat
+data/orders.dat
+data/receipts/
+data/avatars/
+data/smtp.conf
+
+# macOS / editors
+.DS_Store
+__MACOSX/
+*.swp

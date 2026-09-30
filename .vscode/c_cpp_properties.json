@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "includePath": [
+        "${workspaceFolder}/backend/src",
+        "${workspaceFolder}/**"
+      ],
+      "defines": [],
+      "macFrameworkPath": ["/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"],
+      "compilerPath": "/usr/bin/clang++",
+      "cStandard":   "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "macos-clang-x64"
+    },
+    {
+      "name": "Windows",
+      "includePath": [
+        "${workspaceFolder}/backend/src",
+        "${workspaceFolder}/**"
+      ],
+      "defines": ["_WIN32", "_WIN32_WINNT=0x0601", "WIN32_LEAN_AND_MEAN"],
+      "compilerPath": "cl.exe",
+      "cStandard":   "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-msvc-x64"
+    }
+  ],
+  "version": 4
+}
